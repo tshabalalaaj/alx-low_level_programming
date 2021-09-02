@@ -5,7 +5,6 @@
  *
  * Return: void function
  */
-
 void print_most_numbers(void)
 {
 	int i;

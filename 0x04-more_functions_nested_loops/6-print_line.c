@@ -6,7 +6,6 @@
  * @n: number of times _ is used
  * Return: void functions
  */
- 
 void print_line(int n)
 {
 	int i;

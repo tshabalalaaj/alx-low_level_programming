@@ -6,7 +6,6 @@
  * @n: number of times \ is used
  * Return: void functions
  */
- 
 void print_diagonal(int n)
 {
 	int a = n, j;
@@ -28,4 +27,5 @@ void print_diagonal(int n)
 	{
 		_putchar('\n');
 	}
+	_putchar('\n');
 }

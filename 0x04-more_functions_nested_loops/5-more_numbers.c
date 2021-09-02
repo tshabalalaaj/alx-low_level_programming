@@ -5,7 +5,6 @@
  *
  * Return: void function
  */
- 
 void more_numbers(void)
 {
 	int i, j;
@@ -22,4 +21,5 @@ void more_numbers(void)
 		}
 		_putchar('\n');
 	}
+	_putchar('\n');
 }
