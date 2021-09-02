@@ -1,29 +1,28 @@
 #include "holberton.h"
 
 /**
- * print_square - check for a digit
- * @n : number of _ to be printed
- * Return:void
+ * print_square - prints diagonal line in terminal
+ *
+ * @size: size of square
+ * Return: void functions
  */
-
-void print_square(int n)
+void print_square(int size)
 {
+	int i, j;
 
-	int i = 0, ii;
-
-	while (i < n && n > 0)
+	if (size > 1)
 	{
-		ii = 0;
-		while (ii < n)
+		for (i = 1; i <= size; i++)
 		{
-			_putchar('#');
-			ii++;
+			for (j = 1; j <= size; j++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-
-		_putchar('\n');
-		i++;
 	}
-	if (i == 0)
+	else
+	{
 		_putchar('\n');
-
+	}
 }

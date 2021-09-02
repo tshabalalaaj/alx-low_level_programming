@@ -1,42 +1,43 @@
+#include "holberton.h"
 #include <stdio.h>
+
 /**
- * main - check the code for Holberton School students.
+ * main - fizz for multiples of 3 and buzz for 5 and fizzbuzz for both
  *
- * Return: void.
+ * Return: 0
  */
 
 int main(void)
 {
+	int i;
 
-	int i = 1;
-
-	while (i <= 100)
+	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
 		}
 		else if (i % 3 == 0)
 		{
-			printf("Fizz");
+			printf("Fizz ");
 		}
 		else if (i % 5 == 0)
 		{
-			printf("Buzz");
+			if (i != 100)
+			{
+				printf("Buzz ");
+			}
+			else
+			{
+				printf("Buzz");
+			}
 		}
 		else
 		{
-			printf("%i", i);
+			printf("%d ", i);
 		}
-
-		if (i != 100)
-		{
-			putchar(' ');
-		}
-
-		i++;
 	}
-	putchar('\n');
+	printf("\n");
+	
 	return (0);
-
 }

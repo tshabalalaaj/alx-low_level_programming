@@ -1,30 +1,31 @@
 #include "holberton.h"
 
 /**
- * print_diagonal - check for a digit
- * @n : number of \\ to be printed
- * Return:void
+ * print_diagonal - prints diagonal line in terminal
+ *
+ * @n: number of times \ is used
+ * Return: void functions
  */
-
+ 
 void print_diagonal(int n)
 {
+	int a = n, j;
 
-	int i = 0, ii;
-
-	while (i < n && n > 0)
+	if (n > 0)
 	{
-		ii = 0;
-		while (ii < i)
+		while (n > 0)
 		{
-			_putchar(' ');
-			ii++;
+			for (j = a - n; j > 0; j--)
+			{
+				_putchar(' ');
+			}
+			_putchar('\\');
+			_putchar('\n');
+			n--;
 		}
-
-		_putchar('\\');
-		_putchar('\n');
-		i++;
 	}
-	if (i == 0)
+	else
+	{
 		_putchar('\n');
-
+	}
 }
