@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <ctype.h>
+
 /**
- * Main - Prints lowercse alphabets
- * Return - Returns 0 for successfull
+ * main - prints lowercase alphabets
+ * Description: prints lowercase alphabets
+ * Return: Returns 0 for successfull
  */
 int main(void)
 {
